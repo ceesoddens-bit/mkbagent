@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voorbeelden – Cees Oddens</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: 'Montserrat', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white min-h-screen flex flex-col">
+
+    <header id="header" class="fixed top-0 left-0 w-full z-50 transition-colors duration-300 ease-in-out bg-transparent">
+      <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+            <a href="index.html" class="text-xl font-bold uppercase tracking-wider">Cees Oddens</a>
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="index.html" class="text-white font-bold uppercase text-sm tracking-wider transition-colors duration-300 hover:text-blue-300">Home</a></li>
+                <li><a href="http://ceesoddens.com" class="text-white font-bold uppercase text-sm tracking-wider transition-colors duration-300 hover:text-blue-300">Over</a></li>
+                <li><a href="http://ceesoddens.com" class="text-white font-bold uppercase text-sm tracking-wider transition-colors duration-300 hover:text-blue-300">Specialisaties</a></li>
+                <li><a href="http://ceesoddens.com" class="text-white font-bold uppercase text-sm tracking-wider transition-colors duration-300 hover:text-blue-300">Contact</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-grow pt-20">
+        <!-- Hero Section -->
+        <section class="relative py-20 px-4 text-center overflow-hidden">
+             <!-- Background gradient/image -->
+            <div class="absolute inset-0 z-0 bg-gradient-to-b from-blue-900/20 to-black"></div>
+            
+            <div class="relative z-10 max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-widest text-white mb-6">
+                    Praktijkvoorbeelden
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+                    Ontdek hoe AI Agents bedrijven transformeren door processen te automatiseren en efficiëntie te verhogen.
+                </p>
+            </div>
+        </section>
+
+        <!-- Examples Grid -->
+        <section class="py-16 bg-black relative z-10">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                    
+                    <!-- Example 1 -->
+                    <div class="bg-gray-900 border border-gray-800 rounded-lg overflow-hidden hover:border-blue-500 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20 group">
+                        <div class="h-48 bg-gray-800 relative overflow-hidden">
+                             <!-- Placeholder for image/icon -->
+                             <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-blue-900 to-gray-900">
+                                <svg class="w-16 h-16 text-blue-400 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                             </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">Klantenservice Agent</h3>
+                            <p class="text-gray-400 mb-4">Een AI die 24/7 vragen van klanten beantwoordt via chat of email. Hij leert van eerdere gesprekken en escaleert complexe problemen naar een menselijke medewerker.</p>
+                            <ul class="text-sm text-gray-500 space-y-1">
+                                <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>Direct antwoord</li>
+                                <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>Meertalige ondersteuning</li>
+                                <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>CRM integratie</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Example 2 -->
+                    <div class="bg-gray-900 border border-gray-800 rounded-lg overflow-hidden hover:border-green-500 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/20 group">
+                        <div class="h-48 bg-gray-800 relative overflow-hidden">
+                             <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-green-900 to-gray-900">
+                                <svg class="w-16 h-16 text-green-400 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                             </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-green-400 transition-colors">Lead Generatie Agent</h3>
+                            <p class="text-gray-400 mb-4">Automatiseert het proces van het vinden en kwalificeren van potentiële klanten. De agent analyseert profielen, initieert contact en plant afspraken in de agenda.</p>
+                            <ul class="text-sm text-gray-500 space-y-1">
+                                <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>LinkedIn automatisering</li>
+                                <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>Email campagnes</li>
+                                <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>Agenda synchronisatie</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Example 3 -->
+                    <div class="bg-gray-900 border border-gray-800 rounded-lg overflow-hidden hover:border-purple-500 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 group">
+                        <div class="h-48 bg-gray-800 relative overflow-hidden">
+                             <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-purple-900 to-gray-900">
+                                <svg class="w-16 h-16 text-purple-400 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                             </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">Content Creatie Agent</h3>
+                            <p class="text-gray-400 mb-4">Genereert blogposts, social media updates en marketingteksten op basis van trefwoorden en trends. Zorgt voor consistente communicatie over alle kanalen.</p>
+                            <ul class="text-sm text-gray-500 space-y-1">
+                                <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>SEO optimalisatie</li>
+                                <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>Afbeelding generatie</li>
+                                <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>Multi-channel posting</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Example 4 -->
+                    <div class="bg-gray-900 border border-gray-800 rounded-lg overflow-hidden hover:border-yellow-500 transition-all duration-300 hover:shadow-lg hover:shadow-yellow-500/20 group">
+                        <div class="h-48 bg-gray-800 relative overflow-hidden">
+                             <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-yellow-900 to-gray-900">
+                                <svg class="w-16 h-16 text-yellow-400 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                             </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-yellow-400 transition-colors">Data Analyse Agent</h3>
+                            <p class="text-gray-400 mb-4">Verwerkt grote datasets om trends en inzichten te ontdekken. Maakt automatisch rapporten en dashboards voor managementbeslissingen.</p>
+                            <ul class="text-sm text-gray-500 space-y-1">
+                                <li class="flex items-center"><span class="w-2 h-2 bg-yellow-500 rounded-full mr-2"></span>Real-time dashboards</li>
+                                <li class="flex items-center"><span class="w-2 h-2 bg-yellow-500 rounded-full mr-2"></span>Trend voorspelling</li>
+                                <li class="flex items-center"><span class="w-2 h-2 bg-yellow-500 rounded-full mr-2"></span>Foutdetectie</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="mt-16 text-center">
+                    <a href="http://ceesoddens.com" class="inline-block px-8 py-3 bg-blue-600 text-white font-bold uppercase rounded-md tracking-wider hover:bg-blue-500 transition-transform duration-300 hover:scale-105">
+                        Neem Contact Op
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 px-4 relative z-10 mt-auto">
+      <div class="container mx-auto text-center">
+        <div class="social-icons mb-4">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-blue-400 text-sm font-bold uppercase tracking-wider mx-4 transition-colors duration-300">
+            LinkedIn
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-pink-400 text-sm font-bold uppercase tracking-wider mx-4 transition-colors duration-300">
+            Instagram
+          </a>
+        </div>
+        <p class="text-sm">
+          &copy; <span id="copyright-year">2024</span> Cees Oddens. All rights reserved. | Email: ceesoddens@hotmail.com
+        </p>
+      </div>
+    </footer>
+
+    <script>
+        // Change header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-black/90', 'backdrop-blur-sm');
+                header.classList.remove('bg-transparent');
+            } else {
+                header.classList.remove('bg-black/90', 'backdrop-blur-sm');
+                header.classList.add('bg-transparent');
+            }
+        });
+
+        // Set current year in footer
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
