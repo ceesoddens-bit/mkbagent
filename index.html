@@ -1,209 +1,164 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Cees Oddens</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cees Oddens – AI Agents</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f8f9fa;
-            border: 1px solid #dee2e6;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        header {
-            background-color: #001f3f; /* Donkerblauw */
-            color: white;
-            padding: 20px;
-            text-align: center;
-            border-radius: 5px 5px 0 0;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        h2 {
-            color: #001f3f; /* Donkerblauw */
-            border-bottom: 2px solid #001f3f;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            font-size: 1.5em;
-        }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        a {
-            color: #40E0D0; /* Turquoise */
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .section {
-            margin-bottom: 30px;
-            background-color: white;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-        }
-        .job-title {
-            font-weight: bold;
-            font-size: 1.2em;
-            color: #001f3f; /* Donkerblauw */
-        }
-        .job-company {
-            font-style: italic;
-            color: #6c757d;
-        }
-        .job-date {
-            color: #6c757d;
-            font-size: 0.9em;
-        }
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .skill {
-            background-color: #40E0D0; /* Turquoise */
-            color: #001f3f; /* Donkerblauw tekst voor contrast */
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-        }
-        .contact li {
-            margin-bottom: 10px;
-        }
-        @media print {
-            body {
-                padding: 0;
-                margin: 0;
-                background-color: white;
-                box-shadow: none;
-                border: none;
-            }
-            header {
-                background-color: transparent;
-                color: #333;
-            }
-            .section {
-                box-shadow: none;
-                background-color: transparent;
-            }
-            a {
-                text-decoration: none;
-                color: #000;
-            }
-            .no-print {
-                display: none;
-            }
-            .skill {
-                background-color: transparent;
-                color: #000;
-                border: 1px solid #000;
-            }
-        }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: 'Montserrat', sans-serif;
+      }
+      /* Zorgt ervoor dat de video-embed de hele container vult */
+      .video-background {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100vw;
+        height: 100vh;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+      }
+      @media (min-aspect-ratio: 16/9) {
+        .video-background { height: 56.25vw; }
+      }
+      @media (max-aspect-ratio: 16/9) {
+        .video-background { width: 177.78vh; }
+      }
     </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
 </head>
-<body>
-    <header>
-        <h1>Cees Oddens</h1>
-    </header>
-    
-    <div class="section">
-        <h2>Contactgegevens</h2>
-        <ul class="contact">
-            <li>E-mail: <a href="mailto:ceesoddens@hotmail.com">ceesoddens@hotmail.com</a></li>
-            <li>LinkedIn: <a href="https://nl.linkedin.com/in/cees-oddens-61096235a">https://nl.linkedin.com/in/cees-oddens-61096235a</a></li>
-            <li>Portfolio: <a href="https://ceesoddens.com/">https://ceesoddens.com/</a></li>
-        </ul>
-    </div>
-    
-    <div class="section">
-        <h2>Professionele Samenvatting</h2>
-        <p>Al 15 jaar werk ik in de tv-wereld aan high-end 2D en 3D motion design. Ik experimenteer volop met AI en bouw slimme agents die merken helpen vooruit te kijken. Ook ontwerp ik moderne websites waar vorm en techniek elkaar versterken. Van eerste concept tot oplevering: ik regel het hele proces. Het resultaat? Heldere visuele verhalen en digitale oplossingen met maximale impact.</p>
-    </div>
-    
-    <div class="section">
-        <h2>Werkervaring</h2>
-        <ul>
-            <li>
-                <span class="job-title">3D Motion Designer</span><br>
-                <span class="job-company">Fox / The Walt Disney Company</span><br>
-                <span class="job-date">Juli 2013 – December 2025</span><br>
-                Verantwoordelijk voor 2D en 3D motion graphics in de televisiewereld, met focus op creatieve en technische processen van concept tot oplevering. Het bedrijf werd later overgenomen door The Walt Disney Company.
-            </li>
-            <li>
-                <span class="job-title">Motion Graphics Designer (2D en 3D)</span><br>
-                <span class="job-company">Avi-drome, Hilversum</span><br>
-                <span class="job-date">Juli 2010 – Juli 2013</span><br>
-                Ontwikkelen van 2D en 3D motion graphics voor diverse projecten.
-            </li>
-            <li>
-                <span class="job-title">Operationeel Assistent</span><br>
-                <span class="job-company">Dutchview</span><br>
-                <span class="job-date">September 2007 – Juli 2010</span><br>
-                Ondersteuning in operationele taken binnen de tv-productieomgeving.
-            </li>
-            <li>
-                <span class="job-title">Motion Graphics Designer</span><br>
-                <span class="job-company">Fox Sports / ESPN</span><br>
-                <span class="job-date">(2019, binnen de periode bij Fox)</span><br>
-                Ontwikkeld motion graphics voor promoties zoals "De Topper PSV-AJAX", in samenwerking met teams voor VFX en audio.
-            </li>
-            <li>
-                <span class="job-title">Bijdrage aan Projecten</span><br>
-                <span class="job-company">Within Temptation & The Metropole Orchestra: Black Symphony</span><br>
-                <span class="job-date">(2008)</span><br>
-                Bekend van bijdragen aan dit project (specifieke rol niet gedetailleerd in openbare bronnen).
-            </li>
-        </ul>
-    </div>
-    
-    <div class="section">
-        <h2>Opleiding</h2>
-        <p>(Geen specifieke informatie gevonden in openbare bronnen. Voeg toe indien beschikbaar.)</p>
-    </div>
-    
-    <div class="section">
-        <h2>Vaardigheden</h2>
-        <div class="skills-list">
-            <span class="skill">2D/3D Motion Graphics</span>
-            <span class="skill">AI Experimentatie en Agents</span>
-            <span class="skill">Website Ontwerp (UI/UX)</span>
-            <span class="skill">Photography</span>
-            <span class="skill">Branding</span>
-            <span class="skill">Typography</span>
-            <span class="skill">Storyboarding</span>
+<body class="bg-black text-white min-h-screen">
+
+    <header id="header" class="fixed top-0 left-0 w-full z-50 transition-colors duration-300 ease-in-out bg-transparent">
+      <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+            <a href="index.html" class="text-xl font-bold uppercase tracking-wider">Cees Oddens</a>
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="index.html" class="text-white font-bold uppercase text-sm tracking-wider transition-colors duration-300 hover:text-blue-300">Home</a></li>
+                <li><a href="index.html#about" class="text-white font-bold uppercase text-sm tracking-wider transition-colors duration-300 hover:text-blue-300">Over</a></li>
+                <li><a href="index.html#projects" class="text-white font-bold uppercase text-sm tracking-wider transition-colors duration-300 hover:text-blue-300">Specialisaties</a></li>
+                <li><a href="index.html#contact" class="text-white font-bold uppercase text-sm tracking-wider transition-colors duration-300 hover:text-blue-300">Contact</a></li>
+            </ul>
         </div>
-    </div>
+      </nav>
+    </header>
+
+    <main>
+        <section 
+          id="hero" 
+          class="relative min-h-screen flex items-center justify-center text-center px-4 overflow-hidden"
+        >
+          <div class="absolute inset-0 z-0">
+            <iframe 
+                src="https://player.vimeo.com/video/1151192261?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1" 
+                frameborder="0" 
+                allow="autoplay; fullscreen" 
+                class="video-background">
+            </iframe>
+          </div>
+
+          <div class="absolute inset-0 bg-black opacity-60 z-1"></div>
     
-    <div class="section">
-        <h2>Projecten en Portfolio</h2>
-        <ul>
-            <li>2D/3D Motion Graphics: Bekijk de nieuwste showreel uit 2025 op <a href="https://ceesoddens.com/">ceesoddens.com</a>.</li>
-            <li>Websites: Creëren van hoogwaardige 3D-animaties.</li>
-            <li>AI Agents: Creëren van hoogwaardige 2D-animaties.</li>
-            <li>Storyboards: Uitwerken van verhaallijnen in sterke visuele storyboards.</li>
-            <li>Vimeo: <a href="https://vimeo.com/user1987308">vimeo.com/user1987308</a> voor video's.</li>
-            <li>Behance: Voorbeelden zoals Fox Sports promoties.</li>
-        </ul>
-    </div>
-    
-    <div class="section">
-        <h2>Overig</h2>
-        <ul>
-            <li>IMDb: <a href="https://www.imdb.com/name/nm10782786/">imdb.com/name/nm10782786/</a></li>
-            <li>Instagram: Actief met fotografie en evenementen (bijv. portretten).</li>
-        </ul>
-    </div>
-    
-    <p class="no-print">Kopieer deze HTML naar een bestand (bijv. cv.html), open het in je browser en druk af als PDF via de print-optie (Ctrl+P of Cmd+P).</p>
-</body>
+          <div class="relative z-10 flex flex-col items-center">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold uppercase tracking-widest text-white drop-shadow-lg">
+              AI Agents
+            </h1>
+            <p class="mt-4 text-lg md:text-xl lg:text-2xl text-gray-200 max-w-2xl drop-shadow-md">
+              De toekomst van autonome systemen en intelligente automatisering.
+            </p>
+            <a 
+              href="#content"
+              class="mt-8 px-8 py-3 bg-blue-600 text-white font-bold uppercase rounded-md tracking-wider hover:bg-blue-500 transition-transform duration-300 hover:scale-105"
+            >
+              Ontdek Meer
+            </a>
+          </div>
+        </section>
+
+        <section id="content" class="py-20 sm:py-28 bg-black relative z-10">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold uppercase tracking-wider mb-4">
+                        Wat zijn AI Agents?
+                    </h2>
+                    <p class="text-lg text-gray-300 mb-12">
+                        AI Agents zijn geavanceerde software-entiteiten die autonoom doelen kunnen nastreven. Ze nemen waar, redeneren, en handelen in hun omgeving om specifieke taken te voltooien, van eenvoudige dataverzameling tot complexe, meerstaps probleemoplossing.
+                    </p>
+                </div>
+        
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="relative p-8 rounded-lg shadow-lg hover:shadow-blue-500/20 transition-all duration-300 overflow-hidden bg-cover bg-center min-h-[250px] flex flex-col justify-end transform hover:scale-105" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/eigenwebsite-20b2e.firebasestorage.app/o/AI%20Agents%2Fn8n_01.webp?alt=media&token=b7327e83-ea35-4728-b519-d7a955894c50');">
+                        <div class="absolute inset-0 bg-black opacity-70"></div>
+                        <div class="relative z-10">
+                            <h3 class="text-xl font-bold mb-2 text-white">Autonome Operatie</h3>
+                            <p class="text-gray-300">Agents functioneren zelfstandig zonder constante menselijke supervisie, wat leidt tot efficiëntie en schaalbaarheid.</p>
+                        </div>
+                    </div>
+                    <div class="relative p-8 rounded-lg shadow-lg hover:shadow-blue-500/20 transition-all duration-300 overflow-hidden bg-cover bg-center min-h-[250px] flex flex-col justify-end transform hover:scale-105" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/eigenwebsite-20b2e.firebasestorage.app/o/AI%20Agents%2Fn8n_02.webp?alt=media&token=25d861bd-44fc-4bda-9b89-8c5c332f7e7d');">
+                        <div class="absolute inset-0 bg-black opacity-70"></div>
+                        <div class="relative z-10">
+                            <h3 class="text-xl font-bold mb-2 text-white">24/7 Productiviteit</h3>
+                            <p class="text-gray-300">In tegenstelling tot mensen kunnen AI Agents continu werken, waardoor processen nooit stilstaan en de productiviteit wordt gemaximaliseerd.</p>
+                        </div>
+                    </div>
+                    <div class="relative p-8 rounded-lg shadow-lg hover:shadow-blue-500/20 transition-all duration-300 overflow-hidden bg-cover bg-center min-h-[250px] flex flex-col justify-end transform hover:scale-105" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/eigenwebsite-20b2e.firebasestorage.app/o/AI%20Agents%2Fn8n_03.webp?alt=media&token=ccf8e021-f0b2-4052-891c-2f2d1d73788f');">
+                        <div class="absolute inset-0 bg-black opacity-70"></div>
+                        <div class="relative z-10">
+                            <h3 class="text-xl font-bold mb-2 text-white">Data-Gedreven Beslissingen</h3>
+                            <p class="text-gray-300">Ze analyseren enorme hoeveelheden data om weloverwogen, objectieve beslissingen te nemen die de bedrijfsresultaten verbeteren.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 px-4 relative z-10">
+      <div class="container mx-auto text-center">
+        <div class="social-icons mb-4">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-blue-400 text-sm font-bold uppercase tracking-wider mx-4 transition-colors duration-300">
+            LinkedIn
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-pink-400 text-sm font-bold uppercase tracking-wider mx-4 transition-colors duration-300">
+            Instagram
+          </a>
+        </div>
+        <p class="text-sm">
+          &copy; <span id="copyright-year">2024</span> Cees Oddens. All rights reserved. | Email: ceesoddens@hotmail.com
+        </p>
+      </div>
+    </footer>
+
+    <script>
+        // Change header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-black/90', 'backdrop-blur-sm');
+                header.classList.remove('bg-transparent');
+            } else {
+                header.classList.remove('bg-black/90', 'backdrop-blur-sm');
+                header.classList.add('bg-transparent');
+            }
+        });
+
+        // Set current year in footer
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
